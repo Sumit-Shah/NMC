@@ -1,0 +1,8 @@
+1) Create a user defined datatype.
+2) Create a structure varibale.
+3) Use of typedef keyword in c.
+4) Create a structure for student(roll,name,address,mark) and access the members. 
+5) Create a structure for student(roll,name,address(province,district,city,ward),mark) and access the members.
+6) Array of structure.
+7) Create a structure named student that has a name, roll number and marks as members. Assume appropriate types and size of members. Use this structure to read and display records of 10 students. Create two functions: One is to read information of students and other to display the information.
+8) Create a user defined data type for storing 2D coordinate point. Take two points from user and calculate midpoint using function.
