@@ -39,8 +39,9 @@ int main() {
 
     // Print information for each employee
     printf("\nFinal Salaries:\n");
-    for (int i = 0; i < 5; ++i) {
-        printf("Employee %d - Name: %s, Final Salary: $%.2f\n", i + 1, employees[i].name, employees[i].salary);
+    for (int i = 0; i < 5; i++) {
+        printf("Employee %d - Name: %s, Final Salary: $%.2f\n", i + 1, 
+        employees[i].name, employees[i].salary);
     }
 
     return 0;

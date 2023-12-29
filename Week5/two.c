@@ -31,7 +31,7 @@ int main() {
 
     // Input information for 10 employees from the user
     printf("Enter information for 10 employees:\n");
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; i++) {
         printf("Employee %d:\n", i + 1);
         printf("Name: ");
         scanf("%s", employees[i].name);
@@ -48,7 +48,7 @@ int main() {
 
     // Display the filtered employee(s)
     printf("\nEmployees with salary greater than 10,000:\n");
-    for (int i = 0; i < filteredSize; ++i) {
+    for (int i = 0; i < filteredSize; i++) {
         printf("Name: %s\n", filteredEmployee.name);
         printf("Post: %s\n", filteredEmployee.post);
         printf("Salary: %.2f\n", filteredEmployee.salary);

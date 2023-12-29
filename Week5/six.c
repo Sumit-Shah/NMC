@@ -1,21 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Define the structure for employee information
 struct Employee {
     char name[50];
     float salary;
     int hours_worked;
 };
 
+// Function to print information of the employee with the highest salary
 void printHighestSalary(struct Employee *employees, int n) {
-    if (n <= 0) {
-        printf("Invalid number of employees.\n");
-        return;
-    }
+    
 
+    // Initialize variables to track the highest salary and its index
     float maxSalary = employees[0].salary;
     int maxIndex = 0;
 
+    // Iterate through the array to find the employee with the highest salary
     for (int i = 1; i < n; ++i) {
         if (employees[i].salary > maxSalary) {
             maxSalary = employees[i].salary;
@@ -23,6 +24,7 @@ void printHighestSalary(struct Employee *employees, int n) {
         }
     }
 
+    // Print information for the employee with the highest salary
     printf("Employee with the highest salary:\n");
     printf("Name: %s\n", employees[maxIndex].name);
     printf("Salary: $%.2f\n", employees[maxIndex].salary);
@@ -32,10 +34,11 @@ void printHighestSalary(struct Employee *employees, int n) {
 int main() {
     int n;
 
+    // Get the number of employees from the user
     printf("Enter the number of employees: ");
     scanf("%d", &n);
 
-    // Dynamically allocate an array of structures
+    // Dynamically allocate an array of structures to store employee information
     struct Employee *employees = (struct Employee *)malloc(n * sizeof(struct Employee));
 
     // Input information for each employee

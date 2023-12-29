@@ -39,7 +39,7 @@ struct student {
 // Function to read information of students
 void readStudentInfo(struct student *s) {
     printf("Enter student details:\n");
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; i++) {
         printf("Student %d:\n", i + 1);
         printf("Name: ");
         scanf("%s", s[i].name);
@@ -54,7 +54,7 @@ void readStudentInfo(struct student *s) {
 // Function to display information of students
 void displayStudentInfo(const struct student *s) {
     printf("\nStudent Information:\n");
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; i++) {
         printf("Student %d:\n", i + 1);
         printf("Name: %s\n", s[i].name);
         printf("Roll Number: %d\n", s[i].roll_number);

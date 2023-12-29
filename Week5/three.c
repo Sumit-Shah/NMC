@@ -4,7 +4,7 @@ void display(int limit_range[2]) {
     int lower_limit = limit_range[0];
     int upper_limit = limit_range[1];
 
-    for (int number = lower_limit; number <= upper_limit; ++number) {
+    for (int number = lower_limit; number < upper_limit; ++number) {
         printf("%d\n", number);
     }
 }
