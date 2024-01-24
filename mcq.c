@@ -421,10 +421,10 @@
 
 
 // 49) What will be the output of the program?
-#include <stdio.h>
-#include <string.h>
-void main(){
-char name1[10]="ram";
-char name2;
-printf("String copy result:%s",strcpy(name1,name2));
-}
+// #include <stdio.h>
+// #include <string.h>
+// void main(){
+// char name1[10]="ram";
+// char name2;
+// printf("String copy result:%s",strcpy(name1,name2));
+// }
